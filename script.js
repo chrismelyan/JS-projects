@@ -76,3 +76,11 @@ function remove (string) {
     } 
    
    remove ('Hi!!');
+
+   function cannonsReady(gunners) {
+    if (gunners[key] === 'aye') {
+      return "Fire!";
+    } else {
+    return "Shiver me timbers!";
+    }
+  }
