@@ -66,3 +66,13 @@ const personalMoviesDB = {
    }
  }
 }
+//Codewars-8 "Remove ! from the end of the string"
+function remove (string) {  
+    let newString = string;
+     while (newString[newString.length - 1] === '!') {
+       newString = newString.substring(0,newString.length-1);
+      } 
+     return console.log(newString);
+    } 
+   
+   remove ('Hi!!');
