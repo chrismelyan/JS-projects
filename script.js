@@ -77,10 +77,36 @@ function remove (string) {
    
    remove ('Hi!!');
 
+   // My solution
    function cannonsReady(gunners) {
-    if (gunners[key] === 'aye') {
-      return "Fire!";
+    let arr = Object.keys(gunners);
+    let notReady = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === 'nay') {
+        notReady += 1;
+      }
+    if (notReady > 0) {
+      return "Shiver me timbers!";
     } else {
-    return "Shiver me timbers!";
+    return "Fire!";
     }
   }
+}
+
+//Not my solution
+const cannonsReady = (gunners) => {
+    let nayCounter = 0;
+    Object.keys(gunners).forEach(function(key) {
+      
+      if (gunners[key] === 'nay') {
+        nayCounter += 1;
+      }
+      console.log(nayCounter);
+      
+    });
+    if (nayCounter > 0) {
+      return 'Shiver me timbers!';
+      } else {
+        return 'Fire!';
+      }
+  };
