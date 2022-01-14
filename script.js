@@ -13,7 +13,7 @@ const personalMoviesDB = {
     },
     rememberMyFilms: function() {
         for (let i = 0; i < 2; i++) {
-            const a = prompt('Один из последних просмотренных фильмов?', '');
+            const a = prompt('Один из последних просмотренных фильмов?', ''),
                   b = prompt('На сколько оцените его?', '');
         
             if (a != null && b != null && a != '' && b != '' && a.length < 50) {
@@ -66,7 +66,7 @@ const personalMoviesDB = {
    }
  }
 }
-//Codewars-8 "Remove ! from the end of the string"
+//Codewars - 8 "Remove ! from the end of the string"
 function remove (string) {  
     let newString = string;
      while (newString[newString.length - 1] === '!') {
@@ -112,30 +112,31 @@ const cannonsReady = (gunners) => {
   };
   // Not my solution 2
   const cannonsReady = (gunners) => {
-    return Object.values(gunners).some(m => m === 'nay') ? 'Shiver me timbers!' : 'Fire!';
+      return Object.values(gunners).some(m => m === 'nay') ? 'Shiver me timbers!' : 'Fire!';
 
-    const cannonsReady = (gunners) => {
-        for (var i in gunners) {
-            if (gunners[i] == "nay") {
-              return "Shiver me timbers!"
-            }
-        }
-      return "Fire!"
-    }
-
-    function howMuchILoveYou(nbPetals) {
-        let flower = [
-                      'I love you', 
-                      'a little', 
-                      'a lot', 
-                      'passionately', 
-                      'madly', 
-                      'not at all'
-                     ];
-      for (let i = 0; i <= nbPetals-1; i += 1) {
-
-       if (i === nbPetals-1) {
-         return flower[i%6]
-       }
+      const cannonsReady = (gunners) => {
+          for (let i in gunners) {
+              if (gunners[i] == "nay") {
+                  return "Shiver me timbers!"
+              }
+          }
+          return "Fire!"
       }
-    }
+
+      function howMuchILoveYou(nbPetals) {
+          let flower = [
+              'I love you',
+              'a little',
+              'a lot',
+              'passionately',
+              'madly',
+              'not at all'
+          ];
+          for (let i = 0; i <= nbPetals - 1; i += 1) {
+
+              if (i === nbPetals - 1) {
+                  return flower[i % 6]
+              }
+          }
+      }
+  }
