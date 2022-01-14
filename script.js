@@ -110,3 +110,15 @@ const cannonsReady = (gunners) => {
         return 'Fire!';
       }
   };
+  // Not my solution 2
+  const cannonsReady = (gunners) => {
+    return Object.values(gunners).some(m => m === 'nay') ? 'Shiver me timbers!' : 'Fire!';
+
+    const cannonsReady = (gunners) => {
+        for (var i in gunners) {
+            if (gunners[i] == "nay") {
+              return "Shiver me timbers!"
+            }
+        }
+      return "Fire!"
+    }
