@@ -122,3 +122,20 @@ const cannonsReady = (gunners) => {
         }
       return "Fire!"
     }
+
+    function howMuchILoveYou(nbPetals) {
+        let flower = [
+                      'I love you', 
+                      'a little', 
+                      'a lot', 
+                      'passionately', 
+                      'madly', 
+                      'not at all'
+                     ];
+      for (let i = 0; i <= nbPetals-1; i += 1) {
+
+       if (i === nbPetals-1) {
+         return flower[i%6]
+       }
+      }
+    }
