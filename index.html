@@ -5,13 +5,40 @@
     <title>Time Up</title>
 </head>
 <body>
-<h1>Time's up!</h1>
+<h1 id="heading">Time's up!</h1>
 <script>
   let timeUp = function () {
     alert("Время вышло!");
   };
 
   setTimeout(timeUp, 3000);
+
+ let doHomeworkAlarm = function () {
+      alert("Эй! Пора делать домашку!");
+  };
+ let timeoutId = setTimeout(doHomeworkAlarm, 6000);
+  //clearTimeout(timeoutId);
+
+ // let counter = 1;
+ // function printMessage() {
+ //         console.log('Ты здесь уже ' + counter + ' секунд.');
+ //         counter++;
+ //
+ // }
+ //     let printInterval = setInterval(printMessage, 1000);
+
+let leftOffset = 0;
+let heading = document.getElementbyId('heading');
+function moveHeading() {
+    heading.offset({ left: leftOffset });
+    leftOffset++;
+    if (leftOffset > 200) {
+        leftOffset =0;
+    }
+}
+
+setInterval(moveHeading, 30);
+
 </script>
 </body>
 </html>
