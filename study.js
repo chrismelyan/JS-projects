@@ -37,7 +37,7 @@ for (let key in options) {
 console.log(Object.keys(options).length);
     
 // Массивы и псевдомассивы
-var arr = [1, 2, 3, 6, 8];
+let arr = [1, 2, 3, 6, 8];
 //for (var j = 0; j < arr.length; j++) {
 //    console.log(arr[i]);
 //}
@@ -45,7 +45,7 @@ arr.forEach(function(item, i, arr) {
     console.log(`${i}: ${item} внутри массива ${arr}`);
 });
 
-for (var i of arr) {
+for (let i of arr) {
     console.log(i);
 }
 console.log(arr);
