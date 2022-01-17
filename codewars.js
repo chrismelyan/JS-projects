@@ -48,7 +48,6 @@ const cannonsReady2 = (gunners) => {
       return Object.values(gunners).some(m => m === 'nay') ? 'Shiver me timbers!' : 'Fire!';
 };
 
-
 const cannonsReady3 = (gunners) => {
           for (let i in gunners) {
               if (gunners[i] == "nay") {
@@ -57,8 +56,6 @@ const cannonsReady3 = (gunners) => {
           }
           return "Fire!"
 };
-
-
 
 function howMuchILoveYou(nbPetals) {
           let flower = [
@@ -78,3 +75,8 @@ function howMuchILoveYou(nbPetals) {
 }
 
 howMuchILoveYou(10);
+
+// Get Nth Even Number
+function nthEven(n){
+  return (n*2)-2;
+}
