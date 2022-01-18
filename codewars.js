@@ -99,3 +99,22 @@ function scoreTest(str, right, omit, wrong) {
   let score = ((zero * right) + (one * omit) - (two * wrong));
   return score;
 }
+
+// String Merge! (7) - My solution (wrong!!!)
+function stringMerge(string1, string2, letter){
+  let s1;
+  let s2;
+  for (let i = 0; i < string1.length; i++) {
+    if (string1[i] === letter) {
+     return s1 = string1.slice(0, i+1);
+    }
+  }
+  for (let j = string2.length -1; j >= 0; j--) {
+    if (string2[j] === letter) {
+     return s2 = string2.slice(j,-1);
+    }
+  }
+  let score = s1 + s2;
+  return score;
+} 
+
