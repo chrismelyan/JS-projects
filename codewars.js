@@ -80,3 +80,22 @@ howMuchILoveYou(10);
 function nthEven(n){
   return (n*2)-2;
 }
+
+// Scoring Tests (7)
+function scoreTest(str, right, omit, wrong) { 
+  let zero = 0;
+  let one = 0;
+  let two = 0;
+  
+  for(let i of str) {
+    if (i === 0) {
+      zero += 1;
+    } else if (i === 1) {
+      one += 1;
+    } else {
+      two +=1;
+    };
+  }
+  let score = ((zero * right) + (one * omit) - (two * wrong));
+  return score;
+}
