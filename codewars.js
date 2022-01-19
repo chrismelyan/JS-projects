@@ -118,3 +118,13 @@ function stringMerge(string1, string2, letter){
   return score;
 } 
 
+//Sum of integers in string (7) - My solution (wrong!!)
+function sumOfIntegersInString(s) {
+  let count = 0;
+  for(let i of s) {
+    if (i >= 0) {
+      count++;
+    }
+  }
+  return count;
+}
