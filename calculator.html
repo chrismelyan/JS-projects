@@ -16,7 +16,8 @@
 <label for="num2"></label>
 <input id="num2" />
 <br>
-<button>Count</button>
+<button onclick="func()">Count</button>
+<p id="result"></p>
 <script>
     let op;
     function func() {
@@ -38,6 +39,8 @@
                 result = num1 / num2;
                 break;
         }
+
+        document.getElementById('result').innerHTML = result;
     }
 </script>
 </body>
