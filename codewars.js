@@ -122,3 +122,15 @@ function stringMerge(string1, string2, letter){
 function sumOfIntegersInString(s) {
   return s.split(/([^0-9])/g).map(x => parseInt(x)).filter(Number).reduce((acc, i) => acc+i, 0);
 }
+
+//Simple Fun #238: Tennis Game Points
+function tennisGamePoints(score) {
+  let arr = score.split`-`
+  let dict = {15:1,40:3,love:0,15:1,30:2}
+  arr=arr.map(x=>dict[x])
+  if (arr.some(x=>x===undefined)){
+    return arr.filter(x=>x!==undefined).reduce((a,b)=>a+(b+b),0)
+  }
+  return arr.reduce((a,b)=>a+b,0)
+}
+
