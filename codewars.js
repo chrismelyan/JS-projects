@@ -120,11 +120,5 @@ function stringMerge(string1, string2, letter){
 
 //Sum of integers in string (7) - My solution (wrong!!)
 function sumOfIntegersInString(s) {
-  let count = 0;
-  for(let i of s) {
-    if (i >= 0) {
-      count++;
-    }
-  }
-  return count;
+  return s.split(/([^0-9])/g).map(x => parseInt(x)).filter(Number).reduce((acc, i) => acc+i, 0);
 }
