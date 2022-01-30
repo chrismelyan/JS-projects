@@ -134,3 +134,15 @@ function tennisGamePoints(score) {
   return arr.reduce((a,b)=>a+b,0)
 }
 
+//Growth of a Population (7)
+function nbYear(p0, percent, aug, p) {
+  let i = 0;
+ while (true) {
+   if( p0 >= p) {
+     return i;
+   }
+   p0 = p0 + p0*(percent/100) + aug;
+   i++;
+ }
+ return i;
+}
