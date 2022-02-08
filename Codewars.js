@@ -173,3 +173,9 @@ function countPositivesSumNegatives(input) {
   
   return [positive, negative];
 }
+
+//Ones and Zeros (8)
+const binaryArrayToNumber = arr => {
+  let a = arr.join('');
+  return parseInt(a, 2);
+};
