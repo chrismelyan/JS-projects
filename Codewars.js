@@ -179,3 +179,15 @@ const binaryArrayToNumber = arr => {
   let a = arr.join('');
   return parseInt(a, 2);
 };
+
+//Odd or Even? (7)
+function oddOrEven(array) {
+  const reducer = (p, c) => p + c;
+ if (array.length === 0) {
+   return 'even';
+ } else if (array.reduce(reducer)%2 == 0) {
+   return 'even';
+ } else {
+   return 'odd';
+ }
+}
