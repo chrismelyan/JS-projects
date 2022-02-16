@@ -206,3 +206,17 @@ function findOdd(A) {
     }
   }
 }
+
+//Complementary DNA (7)
+function DNAStrand(dna){
+  let sequance = {
+    'A': 'T',
+    'T': 'A',
+    'C': 'G',
+    'G': 'C'
+  }
+  
+  return dna.replace(/A|T|C|G/g, function(matched) {
+    return sequance[matched];
+  })
+}
