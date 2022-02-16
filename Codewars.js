@@ -196,3 +196,13 @@ function oddOrEven(array) {
 function filter_list(l) {
   return l.filter(el => typeof(el) === 'number');
 }
+
+// Find the odd int (6)
+function findOdd(A) {
+  for (let i = 0; i < A.length; i++) {
+    const int = A.filter(el => el ===A[i]).length;
+    if(int % 2 === 1) {
+      return A[i];
+    }
+  }
+}
