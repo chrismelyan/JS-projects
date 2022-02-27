@@ -226,3 +226,8 @@ function disemvowel(str) {
   return str.replace(/a|e|i|o|u/ig, '');
   //return str.replace(/[aeiou]/gi, '');
 }
+
+//Remove First and Last Character (8)
+function removeChar(str){
+  return str.slice(1, -1)
+};
