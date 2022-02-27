@@ -220,3 +220,8 @@ function DNAStrand(dna){
     return sequance[matched];
   })
 }
+
+//Disemvowel Trolls (7)
+function disemvowel(str) {
+  return str.replace(/a|e|i|o|u/ig, '');
+}
