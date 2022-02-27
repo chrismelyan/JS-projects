@@ -224,4 +224,5 @@ function DNAStrand(dna){
 //Disemvowel Trolls (7)
 function disemvowel(str) {
   return str.replace(/a|e|i|o|u/ig, '');
+  //return str.replace(/[aeiou]/gi, '');
 }
