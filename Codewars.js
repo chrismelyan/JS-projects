@@ -231,3 +231,9 @@ function disemvowel(str) {
 function removeChar(str){
   return str.slice(1, -1)
 };
+
+//Grasshopper - Personalized Message (8)
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest'
+}
+
