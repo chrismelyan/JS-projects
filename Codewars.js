@@ -237,3 +237,14 @@ function greet (name, owner) {
   return name === owner ? 'Hello boss' : 'Hello guest'
 }
 
+//Count the smiley faces! (6)
+function countSmileys(arr) {
+  let inc = 0;
+  const RegexObj = /[;:][~-]?[)D]/
+  for (face of arr) {
+    if (RegexObj.test(face)) {
+      inc++
+    }
+    return inc;
+  }
+}
